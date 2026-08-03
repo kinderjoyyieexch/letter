@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy birthday, My love 💖</title>
+
+    <style>
+      body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffd6e7, #fff0f6, #dff6ff);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+      }
+        .cloud {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.8;
+    animation: moveCloud 20s linear infinite;
+}
+
+.cloud1 {
+    top: 80px;
+    left: -100px;
+}
+
+.cloud2 {
+    top: 250px;
+    left: -200px;
+    animation-delay: 5s;
+}
+
+.cloud3 {
+    top: 420px;
+    left: -150px;
+    animation-delay: 10s;
+}
+
+
+@keyframes moveCloud {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(120vw);
+    }
+
+}
+.container {
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    color: #ff5c8a;
+}
+
+p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #ff8fb1;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+      #letter {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fffafc;
+    width: 350px;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: popUp 0.8s ease;
+}
+
+#letter h2 {
+    color: #ff5c8a;
+    font-size: 30px;
+}
+
+#letter p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+
+@keyframes popUp {
+
+    from {
+        transform: translateX(-50%) scale(0);
+    }
+
+    to {
+        transform: translateX(-50%) scale(1);
+    }
+
+}
+    </style>
+</head>
+
+<body>
+  <audio id="bgMusic" loop>
+    <source src="lover-piano.mp3.mp3" type="audio/mp3">
+</audio>
+  
+    <div class="cloud cloud1">☁️</div>
+    <div class="cloud cloud2">☁️</div>
+    <div class="cloud cloud3">☁️</div>
+   
+    <div class="container">
+
+    <h1>Happy Birthday! 🎂💖</h1>
+
+    <p>A little surprise is waiting for you...</p>
+
+    <button onclick="openLetter()">
+        Open My Letter 💌
+          </button>
+      <div id="letter">
+    💌
+    <h2>Happy Birthday, Babyy! 🎂</h2>
+    <p>
+      Happy birthdayy, loyy! 🎂💖
+    <br><br>
+    I love you so much. Sana ma-appreciate moo too, i made it myselff po HHAHAHAH✨
+    <br><br>
+    I made this little surprisee because I want you to feel how special you are to me.
+    <br><br>
+    I love you foreverrr, babyyy. 💗
+        
+    </p>
+</div>
+<script>
+
+function openLetter(){
+
+  document.getElementById("letter").style.display = "block";
+  document.getElementById ("bgMusic").play();
+
+}
+
+</script>
+
+</body>
+</html>
